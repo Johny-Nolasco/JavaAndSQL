@@ -1,0 +1,64 @@
+https://www.youtube.com/watch?v=glxE7w4D8v8
+
+Command to pull MSSQL Docker Image
+sudo docker pull mcr.microsoft.com/mssql/server:2022-latest
+
+
+Command to run the container 
+docker run -d --name sql_server_demo -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=reallyStrongPwd123' -p 1433:1433 mcr.microsoft.com/mssql/server:2022-latest
+
+Command to instal SQL CLI in Docker
+sudo npm install -g sql-cli
+
+username: testUserName
+password: reallyStrongPwd123
+
+
+
+
+
+
+USE [SampleDB];
+
+INSERT INTO [dbo].[SamplePersonsTable] (ID, FirstName, LastName, Age, HomeAddress, PhoneNumber, Email)
+VALUES 
+(1, 'John', 'Doe', 30, '123 Elm St', '555-1234', 'john.doe@example.com'),
+(2, 'Jane', 'Smith', 25, '456 Oak St', '555-5678', 'jane.smith@example.com'),
+(3, 'Michael', 'Johnson', 40, '789 Pine St', '555-8765', 'michael.johnson@example.com'),
+(4, 'Emily', 'Davis', 35, '321 Maple St', '555-4321', 'emily.davis@example.com'),
+(5, 'David', 'Wilson', 28, '654 Cedar St', '555-6789', 'david.wilson@example.com');
+INSERT INTO [dbo].[SamplePersonsTable] (ID, FirstName, LastName, Age, HomeAddress, PhoneNumber, Email)
+VALUES 
+(6, 'Chris', 'Brown', 32, '987 Birch St', '555-2345', 'chris.brown@example.com'),
+(7, 'Patricia', 'Taylor', 27, '543 Spruce St', '555-3456', 'patricia.taylor@example.com'),
+(8, 'Robert', 'Anderson', 45, '876 Walnut St', '555-4567', 'robert.anderson@example.com'),
+(9, 'Linda', 'Thomas', 38, '234 Ash St', '555-5679', 'linda.thomas@example.com'),
+(10, 'James', 'Jackson', 50, '678 Cherry St', '555-6780', 'james.jackson@example.com'),
+(11, 'Barbara', 'White', 29, '123 Elm St', '555-7891', 'barbara.white@example.com'),
+(12, 'Paul', 'Harris', 33, '456 Oak St', '555-8902', 'paul.harris@example.com'),
+(13, 'Nancy', 'Martin', 41, '789 Pine St', '555-9013', 'nancy.martin@example.com'),
+(14, 'Kevin', 'Thompson', 36, '321 Maple St', '555-0124', 'kevin.thompson@example.com'),
+(15, 'Sarah', 'Garcia', 26, '654 Cedar St', '555-1235', 'sarah.garcia@example.com'),
+(16, 'George', 'Martinez', 31, '987 Birch St', '555-2346', 'george.martinez@example.com'),
+(17, 'Karen', 'Robinson', 28, '543 Spruce St', '555-3457', 'karen.robinson@example.com'),
+(18, 'Steven', 'Clark', 42, '876 Walnut St', '555-4568', 'steven.clark@example.com'),
+(19, 'Betty', 'Rodriguez', 39, '234 Ash St', '555-5670', 'betty.rodriguez@example.com'),
+(20, 'Edward', 'Lewis', 48, '678 Cherry St', '555-6781', 'edward.lewis@example.com'),
+(21, 'Helen', 'Lee', 34, '123 Elm St', '555-7892', 'helen.lee@example.com'),
+(22, 'Brian', 'Walker', 37, '456 Oak St', '555-8903', 'brian.walker@example.com'),
+(23, 'Dorothy', 'Hall', 43, '789 Pine St', '555-9014', 'dorothy.hall@example.com'),
+(24, 'Ronald', 'Allen', 29, '321 Maple St', '555-0125', 'ronald.allen@example.com'),
+(25, 'Sandra', 'Young', 27, '654 Cedar St', '555-1236', 'sandra.young@example.com'),
+(26, 'Jason', 'Hernandez', 32, '987 Birch St', '555-2347', 'jason.hernandez@example.com'),
+(27, 'Donna', 'King', 30, '543 Spruce St', '555-3458', 'donna.king@example.com'),
+(28, 'Larry', 'Wright', 44, '876 Walnut St', '555-4569', 'larry.wright@example.com'),
+(29, 'Carol', 'Lopez', 40, '234 Ash St', '555-5671', 'carol.lopez@example.com'),
+(30, 'Jeffrey', 'Hill', 49, '678 Cherry St', '555-6782', 'jeffrey.hill@example.com'),
+(31, 'Deborah', 'Scott', 35, '123 Elm St', '555-7893', 'deborah.scott@example.com'),
+(32, 'Frank', 'Green', 38, '456 Oak St', '555-8904', 'frank.green@example.com'),
+(33, 'Rebecca', 'Adams', 46, '789 Pine St', '555-9015', 'rebecca.adams@example.com'),
+(34, 'Raymond', 'Baker', 31, '321 Maple St', '555-0126', 'raymond.baker@example.com'),
+(35, 'Sharon', 'Gonzalez', 29, '654 Cedar St', '555-1237', 'sharon.gonzalez@example.com'),
+(36, 'Gregory', 'Nelson', 33, '987 Birch St', '555-2348', 'gregory.nelson@example.com'),
+(37, 'Laura', 'Carter', 28, '543 Spruce St', '555-3459', 'laura.carter@example.com'),
+(38, 'Scott', 'Mitchell', 41, '876 Walnut St', '555-4570', 'scott.mitchell@example.com'),
